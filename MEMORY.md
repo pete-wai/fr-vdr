@@ -42,3 +42,5 @@ Added a generated reading page for each sample, linked from Examples, with offer
 Local build passes 39 tests, including new checks for summary arithmetic, mandatory applicability, every response field, and HTML escaping. Browser verification and publication are in progress.
 
 Browser QA confirmed all 37 rule cards render, sample switching works by keyboard, and status cards adapt to a two-column mobile layout. Harbor totals are 24 Fully Addressed, 9 Partially Addressed, 3 Not Addressed, and 1 Not Applicable; Smallbrook totals are 9, 22, 5, and 1. The built site passed 143 local-link checks. Publishing this extension through the existing Pages workflow.
+
+Published commit `a05f8bb38b6ec78ac99d89ac0002e46a505956cb` successfully in Actions run https://github.com/pete-wai/fr-vdr/actions/runs/41357963895. Verified all three public `/samples/{automated,legacy,availability}/` pages return HTTP 200, contain all 37 rule responses, and show totals matching their source JSON. Confirmed the Harbor viewer in the public browser. All 39 tests and deployment checks passed. This final log-only update uses `[skip ci]`; the deployed site is unchanged.

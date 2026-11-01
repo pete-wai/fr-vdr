@@ -21,3 +21,16 @@ Initial automated verification: all six examples pass; 34 tests pass, including 
 - The official CSV Schema documentation contains inconsistent examples of column-reference separators; the generated schema uses `/`, verified against the reference implementation.
 
 Next: create the public repository, configure GitHub Pages, verify the deployed build and downloads, then append the deployment outcome.
+
+### Deployment completed
+
+- Public repository: https://github.com/pete-wai/fr-vdr
+- Live site: https://pete-wai.github.io/fr-vdr/
+- Deployed content commit: `38ce39ecb00279157899d7ceacc6dece65a0f88a`.
+- GitHub Actions run https://github.com/pete-wai/fr-vdr/actions/runs/41357272830 completed successfully: locked installation, reference CSV validation, 34 tests, coverage, build, generated-file consistency, artifact upload, and Pages deployment.
+- Verified HTTP 200 for all four public pages and all twelve downloads. Every download matched its repository source byte-for-byte; the six downloaded example submissions passed the shared validator.
+- Verified the public validator loads and validates the Smallbrook CSV example and resolves its download within `/fr-vdr/downloads/`.
+- All requested root documentation, the original request, clarification answers, follow-up, and accepted implementation message are saved. The working tree was clean before this final log entry.
+- This final documentation-only commit does not change the deployed site and uses `[skip ci]` to avoid rebuilding unchanged artifacts.
+
+No implementation or publication work remains. Future maintenance should start with an explicit upstream comparison and review of any rule changes; the known applicability limitations remain documented rather than silently resolved.

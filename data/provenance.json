@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/FedRAMP/rules",
+  "commit": "0735135dbfe5d97ab00716c80a9306438ceeb6fe",
+  "path": "fedramp-consolidated-rules.json",
+  "version": "2026.10.13.01",
+  "retrievedOn": "2026-11-01",
+  "sha256": "fb48d677a85d77fb72735a325de2c1945a1e0ceab1d2e655292fe9ebe3e4e0b4"
+}

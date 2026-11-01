@@ -1,0 +1,13 @@
+.validator { border: 1px solid var(--md-default-fg-color--lightest); border-radius: .3rem; padding: 1rem; }
+.validator label { display: block; font-weight: 600; margin: .6rem 0 .25rem; }
+.validator input, .validator select, .validator textarea { font: inherit; border: 1px solid #718096; border-radius: .2rem; padding: .45rem; max-width: 100%; background: var(--md-default-bg-color); color: var(--md-default-fg-color); }
+.validator textarea { display: block; width: 100%; font-family: ui-monospace, monospace; font-size: .7rem; resize: vertical; }
+.validator button { background: #334699; color: white; padding: .55rem .9rem; border-radius: .2rem; cursor: pointer; font-weight: 600; }
+.validator button:disabled { opacity: .6; cursor: wait; }
+.validator :focus-visible { outline: 3px solid #b05c00; outline-offset: 3px; }
+.validator-row { display: flex; flex-wrap: wrap; gap: .75rem; align-items: end; margin: .6rem 0; }
+.validator #text-help { font-size: .75rem; }
+#validation-summary { font-weight: 600; }
+#validation-summary[data-valid="true"] { color: #17623c; }
+#validation-summary[data-valid="false"] { color: #a32121; }
+#validation-errors { overflow-wrap: anywhere; }

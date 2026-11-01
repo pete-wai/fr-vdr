@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "schemaVersion": "0.1.0",
+    "rulesVersion": "2026.10.13.01",
+    "providerName": "Harbor Systems (fictional)",
+    "offeringName": "Harbor Agency Workspace",
+    "framework": "Rev5",
+    "class": "C",
+    "asOfDate": "2026-12-07"
+  },
+  "responses": {
+    "VDR-CSO-DET": {
+      "status": "Fully Addressed",
+      "explanation": "Daily scanner runs, staffed threat-intelligence and disclosure intake, scheduled testing, and manual control reviews identify technical and process weaknesses.",
+      "additionalAssurance": "A daily reconciliation checks that every detection source reaches our tracking register."
+    },
+    "VDR-CSO-RES": {
+      "status": "Fully Addressed",
+      "explanation": "Analysts maintain a daily reviewed register covering ownership, evaluation, exploitation evidence, mitigation, remediation, and reporting for every detected vulnerability."
+    },
+    "VDR-CSO-FAV": {
+      "status": "Fully Addressed",
+      "explanation": "Missed scans, review failures, and reporting errors become vulnerability tickets with owners and tracked corrective actions."
+    },
+    "VDR-CSO-DFR": {
+      "status": "Fully Addressed",
+      "explanation": "Microsegmentation, restricted administration, and hardened templates contain compromise and keep recovery procedures manageable."
+    },
+    "VDR-CSO-ADT": {
+      "status": "Partially Addressed",
+      "explanation": "Legacy scans run automatically, but costly workflow integration leaves evaluation and response tracking manual.",
+      "completionTarget": "2027-06-30",
+      "customerRisk": "Manual handoffs can delay action on agency-impacting findings.",
+      "providerCompensation": "Supervisors reconcile scan results and tickets daily.",
+      "agencyCompensation": "Agencies can review the weekly exception summary and escalate missing actions."
+    },
+    "VDR-CSO-DAC": {
+      "status": "Not Addressed",
+      "explanation": "Legacy deployment tooling lacks automatic detection after changes because integrating representative tests is complex.",
+      "completionTarget": "2027-04-30",
+      "customerRisk": "Changed resources may expose agencies before the next scheduled scan.",
+      "providerCompensation": "Operators manually scan changed resources before release and verify isolation.",
+      "agencyCompensation": "Agencies can request the release test record before enabling affected integrations."
+    },
+    "VDR-CSO-MSP": {
+      "status": "Fully Addressed",
+      "explanation": "Credentialed scans use dedicated restricted identities without disabling endpoint protection, firewall controls, or production hardening."
+    },
+    "VDR-CSO-AKE": {
+      "status": "Fully Addressed",
+      "explanation": "A release checklist compares images against the current KEV catalog and blocks activation until listed vulnerabilities are removed."
+    },
+    "VDR-CSO-SIR": {
+      "status": "Fully Addressed",
+      "explanation": "We scan every resource and do not exercise the optional sampling permission."
+    },
+    "VDR-TFR-NMV": {
+      "status": "Fully Addressed",
+      "explanation": "Process owners verify and validate all non-machine resources quarterly and record completed reviews in the register."
+    },
+    "VDR-TFR-PDD": {
+      "status": "Partially Addressed",
+      "explanation": "Machine scanning meets the fourteen-day Class C interval, but some legacy configuration and process drift checks remain monthly.",
+      "completionTarget": "2027-05-31",
+      "customerRisk": "Undetected drift can expose agency workloads between reviews.",
+      "providerCompensation": "Change approval and microsegmentation reduce unreviewed changes and lateral movement.",
+      "agencyCompensation": "Agencies can limit integrations and request configuration evidence for important changes."
+    },
+    "VDR-TFR-PCD": {
+      "status": "Partially Addressed",
+      "explanation": "Stable machine resources receive monthly scans, but some stable non-machine resources receive only quarterly detection reviews.",
+      "completionTarget": "2027-05-31",
+      "customerRisk": "Stale procedures or configuration assumptions could persist beyond the Class C monthly target.",
+      "providerCompensation": "Owners review operational exceptions weekly and investigate reported inconsistencies.",
+      "agencyCompensation": "Agencies can flag unexpected behavior and request focused reviews."
+    },
+    "VDR-TFR-PVR": {
+      "status": "Partially Addressed",
+      "explanation": "We meet the highest-risk Class C impact-reduction intervals but cannot consistently meet every lower-risk interval on tightly coupled legacy components.",
+      "completionTarget": "Unknown",
+      "completionTargetExplanation": "Supplier-dependent upgrades prevent a reliable completion estimate.",
+      "customerRisk": "Some agency exposures may persist beyond recommended intervals.",
+      "providerCompensation": "Isolation and targeted filtering reduce exposure while owners track remaining risk.",
+      "agencyCompensation": "Agencies can restrict affected integrations until verified risk reductions are reported."
+    },
+    "VDR-TFR-RMN": {
+      "status": "Fully Addressed",
+      "explanation": "Maintenance meetings assign remaining vulnerabilities for mitigation or remediation based on recorded residual risk."
+    },
+    "VDR-TFR-KEV": {
+      "status": "Fully Addressed",
+      "explanation": "The response lead checks the KEV catalog daily and schedules actual remediation by its due dates even when interim mitigations are effective."
+    },
+    "VDR-TFR-PSD": {
+      "status": "Partially Addressed",
+      "explanation": "Legacy scanners cover daily high-risk samples, but some isolated machine groups are sampled weekly rather than every three days.",
+      "completionTarget": "2027-03-31",
+      "customerRisk": "Vulnerabilities in those groups may remain undetected longer than recommended.",
+      "providerCompensation": "Strict ingress rules and daily host alerts help identify suspicious activity.",
+      "agencyCompensation": "Agencies can keep connections to those groups disabled unless needed."
+    },
+    "VDR-TFR-MVX": {
+      "status": "Not Applicable",
+      "explanation": "This offering uses Rev5 Class C, so 20x machine verification does not apply; we address VDR-TFR-MVF."
+    },
+    "VDR-TFR-MVF": {
+      "status": "Fully Addressed",
+      "explanation": "Administrators verify and validate all machine resources monthly using configuration exports, health checks, and documented manual review."
+    },
+    "VER-EVA-ELX": {
+      "status": "Fully Addressed",
+      "explanation": "Analysts manually evaluate exploitation prerequisites against actual system configuration and document the supporting evidence for each finding."
+    },
+    "VER-EVA-EIR": {
+      "status": "Fully Addressed",
+      "explanation": "Analysts trace direct and indirect internet payload paths, including application-mediated paths across microsegmented networks."
+    },
+    "VER-EVA-EPA": {
+      "status": "Fully Addressed",
+      "explanation": "The response lead assigns N0–N5 ratings using likely effects on each agency and shared-service impacts, retaining the rationale and history."
+    },
+    "VER-EVA-AIA": {
+      "status": "Fully Addressed",
+      "explanation": "The evaluation checklist assumes automated exploitation unless documented technical evidence proves otherwise."
+    },
+    "VER-EVA-GRV": {
+      "status": "Not Addressed",
+      "explanation": "We track findings individually because reliable grouping across inconsistent legacy inventories would require costly integration.",
+      "completionTarget": "Not Planned",
+      "completionTargetExplanation": "Individual tracking will remain our approach for the current platform.",
+      "customerRisk": "Duplicate records can increase workload and delay related responses.",
+      "providerCompensation": "A coordinator reconciles affected components daily and assigns shared owners.",
+      "agencyCompensation": "Agencies can request a consolidated explanation for findings affecting the same service."
+    },
+    "VER-EVA-EFP": {
+      "status": "Fully Addressed",
+      "explanation": "Analysts inspect affected versions and reproduce findings where safe before documenting false positives."
+    },
+    "VER-EVA-EFA": {
+      "status": "Partially Addressed",
+      "explanation": "Manual assessments cover criticality, reachability, exploitability, and privilege, but documentation of the other contextual factors remains inconsistent.",
+      "completionTarget": "2027-02-28",
+      "customerRisk": "Missing prevalence or vulnerability-interaction evidence may understate agency impact.",
+      "providerCompensation": "Senior analysts review high-impact decisions and known threat intelligence daily.",
+      "agencyCompensation": "Agencies can provide mission context and ask for reassessment of disputed ratings."
+    },
+    "VER-RPT-PER": {
+      "status": "Fully Addressed",
+      "explanation": "A daily reconciliation produces controlled updates for all necessary parties covering all new activity, including manual verification and validation."
+    },
+    "VER-RPT-VDT": {
+      "status": "Fully Addressed",
+      "explanation": "Analysts populate all applicable VER-RPT-VDT fields, including times, historical ratings, reduction plans, overdue explanations, and disposition, then validate the exported JSON."
+    },
+    "VER-RPT-AVI": {
+      "status": "Fully Addressed",
+      "explanation": "A separate register supplies all required accepted-vulnerability fields, including acceptance reasons and practical agency mitigation information."
+    },
+    "VER-RPT-NID": {
+      "status": "Fully Addressed",
+      "explanation": "The reporting lead removes exploit-enabling details while providing necessary parties enough evidence for risk-based decisions."
+    },
+    "VER-RPT-HLO": {
+      "status": "Partially Addressed",
+      "explanation": "Reports summarize scanning and patching, but consolidating penetration tests and disclosure activity into an overview remains manual and incomplete.",
+      "completionTarget": "2027-02-28",
+      "customerRisk": "Agencies may underestimate activity outside routine scanning.",
+      "providerCompensation": "Detailed underlying records remain available through controlled sharing.",
+      "agencyCompensation": "Agencies can request the separate testing and disclosure summaries."
+    },
+    "VER-RPT-RPD": {
+      "status": "Fully Addressed",
+      "explanation": "We exercise the public-disclosure permission only after the security lead determines publication is unlikely to enable exploitation."
+    },
+    "VER-TFR-MHR": {
+      "status": "Fully Addressed",
+      "explanation": "All necessary parties receive a consistent human-readable report every month, assembled and checked by two analysts."
+    },
+    "VER-TFR-MAV": {
+      "status": "Fully Addressed",
+      "explanation": "The response lead marks a vulnerability accepted immediately when remediation or full mitigation within 192 days is unlikely and reviews elapsed time daily."
+    },
+    "VER-TFR-MRH": {
+      "status": "Not Addressed",
+      "explanation": "Reports are shared securely, but automated retrieval of historical JSON is unavailable because the legacy reporting platform lacks a suitable interface.",
+      "completionTarget": "2027-06-30",
+      "customerRisk": "Agency systems cannot automatically reconcile recent historical activity.",
+      "providerCompensation": "We supply manually exported historical records on request.",
+      "agencyCompensation": "Agencies can reconcile those exports against monthly reports."
+    },
+    "VER-TFR-EVU": {
+      "status": "Partially Addressed",
+      "explanation": "Daily triage handles urgent findings, but some routine evaluations take seven days rather than the Class C five-day target.",
+      "completionTarget": "2027-03-31",
+      "customerRisk": "Delayed contextual evaluation may postpone agency risk decisions.",
+      "providerCompensation": "The duty analyst escalates suspected high-impact exposures immediately.",
+      "agencyCompensation": "Agencies can flag critical dependencies for expedited evaluation."
+    },
+    "VER-TFR-IRI": {
+      "status": "Partially Addressed",
+      "explanation": "Incident procedures cover confirmed exploitation, but qualifying internet-reachable likely exploitable findings do not consistently enter incident handling before exploitation.",
+      "completionTarget": "2027-01-31",
+      "customerRisk": "Agencies may receive incident-level coordination later than recommended.",
+      "providerCompensation": "The duty lead sends urgent risk notices and isolates affected components.",
+      "agencyCompensation": "Agencies can trigger their own incident review when notified of these exposures."
+    },
+    "VER-TFR-NRI": {
+      "status": "Fully Addressed",
+      "explanation": "For the Class C optional incident classification, we escalate non-internet-reachable likely exploitable N5 findings until verified reduction to N4 or below."
+    }
+  }
+}

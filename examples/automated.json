@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "schemaVersion": "0.1.0",
+    "rulesVersion": "2026.10.13.01",
+    "providerName": "Aster Cloud (fictional)",
+    "offeringName": "Aster Operations Cloud",
+    "framework": "20x",
+    "class": "C",
+    "asOfDate": "2026-12-07"
+  },
+  "responses": {
+    "VDR-CSO-DET": {
+      "status": "Fully Addressed",
+      "explanation": "Cloud monitoring combines runtime findings, configuration drift, threat intelligence, disclosures, testing, and control-document checks in our GRC system.",
+      "additionalAssurance": "The SOC reviews AI-prepared evidence and resolves disagreements raised by a separate AI check; analysts approve every decision."
+    },
+    "VDR-CSO-RES": {
+      "status": "Fully Addressed",
+      "explanation": "Each detected weakness receives a GRC record with an owner, exploitation assessment, mitigation plan, remediation task, and reporting history.",
+      "additionalAssurance": "Automated escalation checks overdue work hourly and requires evidence before closure."
+    },
+    "VDR-CSO-FAV": {
+      "status": "Fully Addressed",
+      "explanation": "Failed collectors, missed reviews, and reporting defects automatically open vulnerability records for investigation.",
+      "additionalAssurance": "Daily synthetic failures verify that detection and escalation paths work."
+    },
+    "VDR-CSO-DFR": {
+      "status": "Fully Addressed",
+      "explanation": "Immutable deployments, least privilege, workload isolation, and tested failover limit exploitation and simplify recovery."
+    },
+    "VDR-CSO-ADT": {
+      "status": "Fully Addressed",
+      "explanation": "Cloud-native sensors and automated workflows connect detection, evaluation, response, and GRC reporting.",
+      "additionalAssurance": "The SOC validates automated decisions against sampled evidence daily."
+    },
+    "VDR-CSO-DAC": {
+      "status": "Fully Addressed",
+      "explanation": "Deployment pipelines test representative new and significantly changed resources before release and repeat detection after deployment."
+    },
+    "VDR-CSO-MSP": {
+      "status": "Fully Addressed",
+      "explanation": "Sensors use constrained identities and approved interfaces without disabling protective controls or weakening production configurations."
+    },
+    "VDR-CSO-AKE": {
+      "status": "Fully Addressed",
+      "explanation": "Release gates reject new machine resources containing CISA Known Exploited Vulnerabilities and recheck the catalog before activation."
+    },
+    "VDR-CSO-SIR": {
+      "status": "Fully Addressed",
+      "explanation": "We sample only resources with verified identical configurations and expand coverage whenever sampling would reduce detection effectiveness."
+    },
+    "VDR-TFR-NMV": {
+      "status": "Fully Addressed",
+      "explanation": "Owners verify and validate procedures, records, and other non-machine resources monthly, with immediate review after material changes."
+    },
+    "VDR-TFR-PDD": {
+      "status": "Fully Addressed",
+      "explanation": "Continuous configuration monitoring and daily detection cover every resource likely to drift, exceeding the Class C fourteen-day interval."
+    },
+    "VDR-TFR-PCD": {
+      "status": "Fully Addressed",
+      "explanation": "Weekly detection covers all resources classified as unlikely to drift, exceeding the Class C monthly interval."
+    },
+    "VDR-TFR-PVR": {
+      "status": "Fully Addressed",
+      "explanation": "GRC timers apply the Class C PAIN, reachability, and exploitability matrix from evaluation and target each required impact reduction within half its maximum interval.",
+      "additionalAssurance": "The SOC verifies that each reduction is supported by evidence rather than a changed label."
+    },
+    "VDR-TFR-RMN": {
+      "status": "Fully Addressed",
+      "explanation": "Weekly maintenance planning assigns remaining vulnerabilities for mitigation or remediation according to residual risk."
+    },
+    "VDR-TFR-KEV": {
+      "status": "Fully Addressed",
+      "explanation": "Catalog ingestion assigns KEV remediation deadlines and we target completion two days early, including already fully mitigated vulnerabilities.",
+      "additionalAssurance": "Newly listed items with shorter remaining deadlines receive immediate escalation."
+    },
+    "VDR-TFR-PSD": {
+      "status": "Fully Addressed",
+      "explanation": "Representative samples of similar machine resources undergo detection every twelve hours, exceeding the Class C three-day interval."
+    },
+    "VDR-TFR-MVX": {
+      "status": "Fully Addressed",
+      "explanation": "Daily automated checks verify and validate all machine resources against their intended state, exceeding the 20x Class C three-day interval."
+    },
+    "VDR-TFR-MVF": {
+      "status": "Not Applicable",
+      "explanation": "This offering uses 20x Class C, so the Rev5-specific rule does not apply; VDR-TFR-MVX covers machine verification and validation."
+    },
+    "VER-EVA-ELX": {
+      "status": "Fully Addressed",
+      "explanation": "SOC analysts evaluate exploitation prerequisites against workload context using AI-prepared evidence and documented human decisions.",
+      "additionalAssurance": "A separate AI check flags conflicting evidence for analyst resolution rather than independently accepting risk."
+    },
+    "VER-EVA-EIR": {
+      "status": "Fully Addressed",
+      "explanation": "Analysts trace direct and indirect internet payload paths through application, queue, and logging layers before deciding reachability."
+    },
+    "VER-EVA-EPA": {
+      "status": "Fully Addressed",
+      "explanation": "Analysts assign N0–N5 ratings from likely agency effects, including multi-agency outages, and retain the evidence and rating history."
+    },
+    "VER-EVA-AIA": {
+      "status": "Fully Addressed",
+      "explanation": "Evaluation defaults to automated exploitation unless the analyst records evidence proving it cannot be automated."
+    },
+    "VER-EVA-GRV": {
+      "status": "Fully Addressed",
+      "explanation": "GRC groups findings only when affected resources share relevant conditions and the same response can safely address the group."
+    },
+    "VER-EVA-EFP": {
+      "status": "Fully Addressed",
+      "explanation": "Analysts reproduce findings or verify technical evidence before classifying false positives, with automatic reopening after relevant changes."
+    },
+    "VER-EVA-EFA": {
+      "status": "Fully Addressed",
+      "explanation": "Evaluation records cover criticality, reachability, exploitability, detectability, prevalence, privilege, proximate vulnerabilities, and known threats.",
+      "additionalAssurance": "AI checks flag missing context, while the SOC remains responsible for the conclusions."
+    },
+    "VER-RPT-PER": {
+      "status": "Fully Addressed",
+      "explanation": "Authorized necessary parties receive daily updates covering all activity since the previous report, including verification and validation, through controlled sharing."
+    },
+    "VER-RPT-VDT": {
+      "status": "Fully Addressed",
+      "explanation": "Generated reports include every applicable VER-RPT-VDT field, including detection and evaluation times, rating history, completed and planned reductions, overdue rationale, and disposition.",
+      "additionalAssurance": "Each report is checked against the corresponding official JSON schema before release."
+    },
+    "VER-RPT-AVI": {
+      "status": "Fully Addressed",
+      "explanation": "Accepted-vulnerability reports include identifiers, detection sources and times, evaluation times, reachability, exploitability, current PAIN, acceptance reasons, and agency mitigation information."
+    },
+    "VER-RPT-NID": {
+      "status": "Fully Addressed",
+      "explanation": "Role-based reports provide sufficient decision information while withholding exploit-enabling details from recipients without a justified need."
+    },
+    "VER-RPT-HLO": {
+      "status": "Fully Addressed",
+      "explanation": "Monthly overviews summarize all detection and response activity, including disclosures, bug bounties, penetration tests, assessments, and automated checks."
+    },
+    "VER-RPT-RPD": {
+      "status": "Fully Addressed",
+      "explanation": "Security reviewers approve coordinated public disclosures only after assessing that publication is unlikely to enable exploitation."
+    },
+    "VER-TFR-MHR": {
+      "status": "Fully Addressed",
+      "explanation": "All necessary parties receive a human-readable monthly report alongside continuously available records."
+    },
+    "VER-TFR-MAV": {
+      "status": "Fully Addressed",
+      "explanation": "GRC marks vulnerabilities accepted as soon as full mitigation or remediation is not expected within 192 days of evaluation, and checks the elapsed threshold daily."
+    },
+    "VER-TFR-MRH": {
+      "status": "Fully Addressed",
+      "explanation": "An authenticated JSON API exposes recent historical detection and response activity to all necessary parties and refreshes daily, exceeding the Class C fourteen-day interval.",
+      "feedback": "A shared minimum history-retention period would improve consistency across providers."
+    },
+    "VER-TFR-EVU": {
+      "status": "Fully Addressed",
+      "explanation": "The SOC completes contextual evaluation within one day of detection, exceeding the Class C five-day interval."
+    },
+    "VER-TFR-IRI": {
+      "status": "Fully Addressed",
+      "explanation": "Internet-reachable likely exploitable vulnerabilities above N3 enter reportable-incident handling until verified mitigation lowers them to N3 or below."
+    },
+    "VER-TFR-NRI": {
+      "status": "Fully Addressed",
+      "explanation": "We exercise the Class C option to treat non-internet-reachable likely exploitable N5 vulnerabilities as reportable incidents until reduced to N4 or below."
+    }
+  }
+}

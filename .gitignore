@@ -1,0 +1,8 @@
+node_modules/
+.venv/
+site/
+docs/downloads/
+docs/assets/validator.js
+.cache/
+__pycache__/
+.DS_Store

@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "schemaVersion": "0.1.0",
+    "rulesVersion": "2026.10.13.01",
+    "providerName": "Smallbrook Services (fictional)",
+    "offeringName": "Smallbrook Public Information Workspace",
+    "framework": "Rev5",
+    "class": "B",
+    "asOfDate": "2026-12-07"
+  },
+  "responses": {
+    "VDR-CSO-DET": {
+      "status": "Partially Addressed",
+      "explanation": "Weekly manual reviews cover servers and availability alerts, but disclosure intake and process-weakness detection are incomplete.",
+      "completionTarget": "2027-03-31",
+      "customerRisk": "Missed weaknesses could disrupt the public-information workspace or expose information agencies placed there.",
+      "providerCompensation": "A small inventory and daily uptime checks make operational changes easier to investigate.",
+      "agencyCompensation": "Agencies should retain source copies and avoid sensitive data or critical workloads."
+    },
+    "VDR-CSO-RES": {
+      "status": "Partially Addressed",
+      "explanation": "A weekly spreadsheet review tracks major findings, but ownership and exploitation checks are not complete for every vulnerability.",
+      "completionTarget": "2027-03-31",
+      "customerRisk": "Unassigned findings may remain open and cause preventable service interruptions.",
+      "providerCompensation": "An on-call operator isolates unstable components and keeps restoration instructions current.",
+      "agencyCompensation": "Agencies should keep an alternate publication channel and avoid critical workloads."
+    },
+    "VDR-CSO-FAV": {
+      "status": "Not Addressed",
+      "explanation": "We have not yet recorded failures of our detection and response processes as vulnerabilities.",
+      "completionTarget": "2027-01-31",
+      "customerRisk": "Repeated review failures may hide exposures that affect agency information or availability.",
+      "providerCompensation": "The weekly operations meeting assigns corrective work in a separate issue list.",
+      "agencyCompensation": "Agencies can request unresolved process issues before expanding their use."
+    },
+    "VDR-CSO-DFR": {
+      "status": "Partially Addressed",
+      "explanation": "Simple isolation and backups support resilience, but the small team has not redesigned shared components that complicate recovery.",
+      "completionTarget": "2027-06-30",
+      "customerRisk": "A shared-component failure could interrupt multiple agency workspaces.",
+      "providerCompensation": "We test restores monthly and restrict administrative access.",
+      "agencyCompensation": "Agencies should maintain an alternate service and avoid time-critical dependencies."
+    },
+    "VDR-CSO-ADT": {
+      "status": "Not Addressed",
+      "explanation": "Budget limits keep vulnerability detection and response largely manual, beyond basic uptime alerts.",
+      "completionTarget": "Unknown",
+      "completionTargetExplanation": "We have not selected an affordable monitoring service.",
+      "customerRisk": "Manual checks can miss emerging weaknesses between reviews.",
+      "providerCompensation": "Operators inspect the small resource inventory weekly and investigate uptime alarms daily.",
+      "agencyCompensation": "Agencies should report unusual behavior promptly and keep sensitive data elsewhere."
+    },
+    "VDR-CSO-DAC": {
+      "status": "Not Addressed",
+      "explanation": "Changes receive manual checks because our deployment scripts do not trigger vulnerability detection.",
+      "completionTarget": "2027-05-31",
+      "customerRisk": "A release could introduce a weakness that affects agency access or content.",
+      "providerCompensation": "The operator reviews changed settings and tests rollback before release.",
+      "agencyCompensation": "Agencies can defer new integrations until the release review is available."
+    },
+    "VDR-CSO-MSP": {
+      "status": "Fully Addressed",
+      "explanation": "Manual assessment uses restricted maintenance access without disabling protective controls or opening additional network paths."
+    },
+    "VDR-CSO-AKE": {
+      "status": "Partially Addressed",
+      "explanation": "Operators check major images against KEVs, but the release checklist does not yet cover every machine component.",
+      "completionTarget": "2027-02-28",
+      "customerRisk": "An overlooked component could expose agency workspaces to known exploitation.",
+      "providerCompensation": "We limit exposed services and remove unused components.",
+      "agencyCompensation": "Agencies should avoid sensitive content and restrict unnecessary integrations."
+    },
+    "VDR-CSO-SIR": {
+      "status": "Fully Addressed",
+      "explanation": "We inspect every machine in the small environment and do not use the optional sampling permission."
+    },
+    "VDR-TFR-NMV": {
+      "status": "Partially Addressed",
+      "explanation": "Some procedures receive quarterly verification and validation, but staffing gaps leave others overdue.",
+      "completionTarget": "2027-03-31",
+      "customerRisk": "Outdated instructions may delay recovery or lead to incorrect handling of agency information.",
+      "providerCompensation": "Operators test restoration steps monthly and review known documentation gaps weekly.",
+      "agencyCompensation": "Agencies can request current recovery instructions and keep independent copies of their content."
+    },
+    "VDR-TFR-PDD": {
+      "status": "Partially Addressed",
+      "explanation": "Servers receive weekly reviews, but some identity and process resources miss the Class B monthly drift-detection interval.",
+      "completionTarget": "2027-04-30",
+      "customerRisk": "Unnoticed access or procedure changes may affect agency information.",
+      "providerCompensation": "We restrict administrative access and review change tickets weekly.",
+      "agencyCompensation": "Agencies should periodically review their accounts and report unexpected permissions."
+    },
+    "VDR-TFR-PCD": {
+      "status": "Partially Addressed",
+      "explanation": "Stable servers are reviewed quarterly, but some non-machine resources have not received complete detection checks within six months.",
+      "completionTarget": "2027-03-31",
+      "customerRisk": "Hidden weaknesses in stable resources could undermine service recovery.",
+      "providerCompensation": "Operators test the restoration path monthly and record discovered weaknesses.",
+      "agencyCompensation": "Agencies can ask for the last review date for dependencies they rely on."
+    },
+    "VDR-TFR-PVR": {
+      "status": "Partially Addressed",
+      "explanation": "We prioritize availability exposures, but cannot yet demonstrate all Class B impact reductions within the applicable PAIN timeframes.",
+      "completionTarget": "Unknown",
+      "completionTargetExplanation": "Supplier fixes and incomplete tracking prevent a reliable completion estimate.",
+      "customerRisk": "Other exposures may persist beyond recommended intervals and affect agency content or access.",
+      "providerCompensation": "We disable affected optional features and retain tested backups.",
+      "agencyCompensation": "Agencies should avoid critical workloads and keep sensitive information outside this service."
+    },
+    "VDR-TFR-RMN": {
+      "status": "Partially Addressed",
+      "explanation": "Routine maintenance resolves outage-related findings, but other residual vulnerabilities lack consistent scheduling.",
+      "completionTarget": "2027-05-31",
+      "customerRisk": "Deferred weaknesses may accumulate and affect agency information.",
+      "providerCompensation": "Weekly reviews retain those findings and prioritize any change in likely impact.",
+      "agencyCompensation": "Agencies can ask about unresolved findings before extending service use."
+    },
+    "VDR-TFR-KEV": {
+      "status": "Partially Addressed",
+      "explanation": "We patch exposed KEVs promptly, but do not yet consistently remediate fully mitigated KEVs by catalog due dates.",
+      "completionTarget": "2027-02-28",
+      "customerRisk": "Failure of an interim mitigation could restore a known exploitation path.",
+      "providerCompensation": "Operators recheck filtering and disable affected optional components.",
+      "agencyCompensation": "Agencies should disconnect affected integrations until remediation is confirmed."
+    },
+    "VDR-TFR-PSD": {
+      "status": "Fully Addressed",
+      "explanation": "Operators perform vulnerability detection on every machine at least once every seven days, covering more than the Class B representative-sample minimum."
+    },
+    "VDR-TFR-MVX": {
+      "status": "Not Applicable",
+      "explanation": "This is a Rev5 Class B offering, so the 20x-specific machine-verification rule does not apply; VDR-TFR-MVF is the relevant rule."
+    },
+    "VDR-TFR-MVF": {
+      "status": "Partially Addressed",
+      "explanation": "Weekly checks verify availability, but full validation of machine configurations against intended behavior remains incomplete.",
+      "completionTarget": "2027-04-30",
+      "customerRisk": "Undetected configuration errors may affect agency access or information.",
+      "providerCompensation": "Operators compare key service settings and test restores monthly.",
+      "agencyCompensation": "Agencies should use this workspace only for noncritical public information."
+    },
+    "VER-EVA-ELX": {
+      "status": "Partially Addressed",
+      "explanation": "Weekly reviews evaluate major exploitation prerequisites, but supporting evidence is incomplete for some findings.",
+      "completionTarget": "2027-03-31",
+      "customerRisk": "We may underestimate vulnerabilities affecting agency workspaces.",
+      "providerCompensation": "The operator treats uncertain findings conservatively and disables exposed optional features.",
+      "agencyCompensation": "Agencies should keep sensitive data elsewhere and request review of concerning findings."
+    },
+    "VER-EVA-EIR": {
+      "status": "Partially Addressed",
+      "explanation": "Reviews cover direct internet exposure, but indirect payload paths through imports and logs are not fully assessed.",
+      "completionTarget": "2027-03-31",
+      "customerRisk": "A vulnerable internal component could process hostile input despite network isolation.",
+      "providerCompensation": "We restrict imports and filter external input at the service boundary.",
+      "agencyCompensation": "Agencies should avoid untrusted uploads and disable unused integrations."
+    },
+    "VER-EVA-EPA": {
+      "status": "Partially Addressed",
+      "explanation": "Weekly reviews assign provisional PAIN ratings emphasizing outages, but confidentiality, integrity, and multi-agency effects need fuller analysis.",
+      "completionTarget": "2027-02-28",
+      "customerRisk": "Incomplete impact estimates may understate the consequences for agency customers.",
+      "providerCompensation": "We restrict the service to public-information use and escalate uncertain ratings.",
+      "agencyCompensation": "Agencies should verify that their content is public and avoid mission-critical dependencies."
+    },
+    "VER-EVA-AIA": {
+      "status": "Fully Addressed",
+      "explanation": "Our manual checklist assumes exploitation can be automated unless we retain technical evidence proving otherwise."
+    },
+    "VER-EVA-GRV": {
+      "status": "Not Addressed",
+      "explanation": "The small team tracks each finding separately and has not established contextual vulnerability groups.",
+      "completionTarget": "Not Planned",
+      "completionTargetExplanation": "The small inventory currently makes individual tracking more practical.",
+      "customerRisk": "Related findings may receive inconsistent handling and consume review time.",
+      "providerCompensation": "A single operator checks the full register each week for shared causes.",
+      "agencyCompensation": "Agencies can request one explanation for related findings affecting their workspace."
+    },
+    "VER-EVA-EFP": {
+      "status": "Partially Addressed",
+      "explanation": "Operators verify obvious scanner errors, but lack time to investigate every potential false positive.",
+      "completionTarget": "2027-05-31",
+      "customerRisk": "Unconfirmed findings can divert effort from genuine agency risks.",
+      "providerCompensation": "Uncertain findings remain open and high-impact cases receive priority.",
+      "agencyCompensation": "Agencies can ask for the evidence behind any dismissed finding."
+    },
+    "VER-EVA-EFA": {
+      "status": "Partially Addressed",
+      "explanation": "Reviews consider availability, reachability, and basic exploitability, but do not consistently document all eight contextual factors.",
+      "completionTarget": "2027-03-31",
+      "customerRisk": "Incomplete context may hide privilege escalation or interacting vulnerabilities.",
+      "providerCompensation": "We limit privileges and review known incidents during the weekly assessment.",
+      "agencyCompensation": "Agencies should describe their use case and avoid sensitive or critical workloads."
+    },
+    "VER-RPT-PER": {
+      "status": "Partially Addressed",
+      "explanation": "Weekly updates cover major findings, but some verification and validation activity is missing from reports to necessary parties.",
+      "completionTarget": "2027-02-28",
+      "customerRisk": "Agencies may lack a complete basis for continued-use decisions.",
+      "providerCompensation": "We provide the underlying operations log on request through controlled sharing.",
+      "agencyCompensation": "Agencies can request missing records and limit use until questions are resolved."
+    },
+    "VER-RPT-VDT": {
+      "status": "Partially Addressed",
+      "explanation": "Our spreadsheet includes identifiers and current ratings but lacks complete historical reductions, evaluation times, and next-reduction details.",
+      "completionTarget": "2027-03-31",
+      "customerRisk": "Agencies may not be able to judge whether risk is declining on time.",
+      "providerCompensation": "Operators retain dated work notes and review unresolved findings weekly.",
+      "agencyCompensation": "Agencies can request those notes and keep independent records of important exposures."
+    },
+    "VER-RPT-AVI": {
+      "status": "Partially Addressed",
+      "explanation": "Accepted findings include reasons and identifiers, but evaluation times and agency mitigation details are incomplete.",
+      "completionTarget": "2027-03-31",
+      "customerRisk": "Agencies may misunderstand the duration or consequences of accepted risk.",
+      "providerCompensation": "We list known limitations in the monthly report and offer a manual review.",
+      "agencyCompensation": "Agencies should seek clarification before accepting affected use cases."
+    },
+    "VER-RPT-NID": {
+      "status": "Fully Addressed",
+      "explanation": "The operator shares risk information with necessary parties through restricted channels and removes exploit-enabling technical detail from public notices."
+    },
+    "VER-RPT-HLO": {
+      "status": "Partially Addressed",
+      "explanation": "Monthly summaries cover maintenance and outages, but do not yet summarize every detection and response activity.",
+      "completionTarget": "2027-04-30",
+      "customerRisk": "Agencies may overestimate the breadth of our review program.",
+      "providerCompensation": "The full operations log remains available through controlled sharing.",
+      "agencyCompensation": "Agencies can request separate testing and disclosure records."
+    },
+    "VER-RPT-RPD": {
+      "status": "Fully Addressed",
+      "explanation": "We do not currently exercise optional public vulnerability disclosure and continue required controlled reporting to necessary parties."
+    },
+    "VER-TFR-MHR": {
+      "status": "Fully Addressed",
+      "explanation": "All necessary parties receive the same human-readable monthly report, with implementation gaps and service limitations identified."
+    },
+    "VER-TFR-MAV": {
+      "status": "Partially Addressed",
+      "explanation": "The weekly register flags elapsed 192-day cases, but we do not yet consistently mark findings accepted when missing that limit is foreseeable.",
+      "completionTarget": "2027-01-31",
+      "customerRisk": "Agencies may mistake a long-term exposure for work that will finish within the limit.",
+      "providerCompensation": "The monthly report lists supplier delays and known unresolved limitations.",
+      "agencyCompensation": "Agencies can ask whether any planned fix lacks a credible completion date."
+    },
+    "VER-TFR-MRH": {
+      "status": "Not Addressed",
+      "explanation": "The spreadsheet has no automated JSON retrieval interface, and a small team has not funded one.",
+      "completionTarget": "Unknown",
+      "completionTargetExplanation": "Funding and implementation timing remain undecided.",
+      "customerRisk": "Agency tools cannot automatically monitor historical activity.",
+      "providerCompensation": "We provide manually assembled history through controlled sharing on request.",
+      "agencyCompensation": "Agencies can reconcile the history with monthly reports and retain their own copies."
+    },
+    "VER-TFR-EVU": {
+      "status": "Partially Addressed",
+      "explanation": "Every detected finding receives a weekly initial review, but complete evaluation under VER-EVA is not consistently finished within seven days.",
+      "completionTarget": "2027-03-31",
+      "customerRisk": "Incomplete evaluations may delay agency decisions about exposures between reviews.",
+      "providerCompensation": "The operator escalates suspected high-impact findings immediately and tracks unfinished assessments.",
+      "agencyCompensation": "Agencies should request completed assessments before expanding use beyond noncritical public information."
+    },
+    "VER-TFR-IRI": {
+      "status": "Fully Addressed",
+      "explanation": "We exercise the Class B option to treat internet-reachable likely exploitable findings above N3 as reportable incidents until reduced to N3 or below."
+    },
+    "VER-TFR-NRI": {
+      "status": "Fully Addressed",
+      "explanation": "We also exercise the Class B option to treat non-internet-reachable likely exploitable N5 findings as reportable incidents until reduced to N4 or below."
+    }
+  }
+}

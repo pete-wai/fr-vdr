@@ -1,0 +1,27 @@
+[project]
+site_name = "VDR/VER implementation status"
+site_description = "An example prototype for discussion: schemas, templates, examples, and local file validation."
+site_url = "https://pete-wai.github.io/fr-vdr/"
+repo_url = "https://github.com/pete-wai/fr-vdr"
+repo_name = "pete-wai/fr-vdr"
+docs_dir = "docs"
+site_dir = "site"
+use_directory_urls = true
+extra_css = ["assets/extra.css"]
+extra_javascript = ["assets/validator.js"]
+nav = [
+  { "Overview" = "index.md" },
+  { "Schemas and template" = "schemas.md" },
+  { "Examples" = "examples.md" },
+  { "Validate" = "validate.md" }
+]
+
+[project.theme]
+language = "en"
+features = ["content.code.copy", "navigation.footer"]
+font = false
+
+[project.theme.palette]
+scheme = "default"
+primary = "indigo"
+accent = "indigo"

@@ -1,0 +1,23 @@
+version 1.1
+@totalColumns 18
+// UTF-8 CSV with a header row; column order is fixed.
+// Companion validator also checks exact headers, all rule IDs, metadata consistency,
+// optional whitespace, and calendar dates. This is a collection schema, not a general CSV engine.
+schemaVersion: is("0.1.0")
+rulesVersion: is("2026.10.13.01")
+providerName: regex("(?s).*\S.*")
+offeringName: regex("(?s).*\S.*")
+framework: is("Rev5") or is("20x")
+class: if($framework/is("20x"), (is("B") or is("C")), (is("B") or is("C") or is("D")))
+asOfDate: xDate and regex("[0-9]{4}-[0-9]{2}-[0-9]{2}")
+fedrampId: 
+ruleId: (is("VDR-CSO-DET") or is("VDR-CSO-RES") or is("VDR-CSO-FAV") or is("VDR-CSO-DFR") or is("VDR-CSO-ADT") or is("VDR-CSO-DAC") or is("VDR-CSO-MSP") or is("VDR-CSO-AKE") or is("VDR-CSO-SIR") or is("VDR-TFR-NMV") or is("VDR-TFR-PDD") or is("VDR-TFR-PCD") or is("VDR-TFR-PVR") or is("VDR-TFR-RMN") or is("VDR-TFR-KEV") or is("VDR-TFR-PSD") or is("VDR-TFR-MVX") or is("VDR-TFR-MVF") or is("VER-EVA-ELX") or is("VER-EVA-EIR") or is("VER-EVA-EPA") or is("VER-EVA-AIA") or is("VER-EVA-GRV") or is("VER-EVA-EFP") or is("VER-EVA-EFA") or is("VER-RPT-PER") or is("VER-RPT-VDT") or is("VER-RPT-AVI") or is("VER-RPT-NID") or is("VER-RPT-HLO") or is("VER-RPT-RPD") or is("VER-TFR-MHR") or is("VER-TFR-MAV") or is("VER-TFR-MRH") or is("VER-TFR-EVU") or is("VER-TFR-IRI") or is("VER-TFR-NRI")) and unique
+status: (is("Fully Addressed") or is("Partially Addressed") or is("Not Addressed") or is("Not Applicable")) and if((($ruleId/is("VDR-TFR-MVF") and $framework/is("20x")) or ($ruleId/is("VDR-TFR-MVX") and $framework/is("Rev5"))), is("Not Applicable"))
+explanation: regex("(?s).*\S.*")
+completionTarget: if(($status/is("Partially Addressed") or $status/is("Not Addressed")), ((xDate and regex("[0-9]{4}-[0-9]{2}-[0-9]{2}")) or is("Unknown") or is("Not Planned")), is(""))
+completionTargetExplanation: if(($completionTarget/is("Unknown") or $completionTarget/is("Not Planned")), regex("(?s).*\S.*"))
+customerRisk: if(($status/is("Partially Addressed") or $status/is("Not Addressed")), regex("(?s).*\S.*"))
+providerCompensation: if(($status/is("Partially Addressed") or $status/is("Not Addressed")), regex("(?s).*\S.*"))
+agencyCompensation: if(($status/is("Partially Addressed") or $status/is("Not Addressed")), regex("(?s).*\S.*"))
+additionalAssurance: 
+feedback: 

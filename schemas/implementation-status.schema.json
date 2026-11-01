@@ -1,0 +1,713 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pete-wai.github.io/fr-vdr/downloads/implementation-status.schema.json",
+  "$schemaVersion": "0.1.0",
+  "title": "VDR/VER Implementation Status — example prototype for discussion",
+  "description": "One offering and one response for each provider-directed VDR/VER rule; this collection is not an official FedRAMP reporting schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "responses"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "#/$defs/metadata"
+    },
+    "responses": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "VDR-CSO-DET",
+        "VDR-CSO-RES",
+        "VDR-CSO-FAV",
+        "VDR-CSO-DFR",
+        "VDR-CSO-ADT",
+        "VDR-CSO-DAC",
+        "VDR-CSO-MSP",
+        "VDR-CSO-AKE",
+        "VDR-CSO-SIR",
+        "VDR-TFR-NMV",
+        "VDR-TFR-PDD",
+        "VDR-TFR-PCD",
+        "VDR-TFR-PVR",
+        "VDR-TFR-RMN",
+        "VDR-TFR-KEV",
+        "VDR-TFR-PSD",
+        "VDR-TFR-MVX",
+        "VDR-TFR-MVF",
+        "VER-EVA-ELX",
+        "VER-EVA-EIR",
+        "VER-EVA-EPA",
+        "VER-EVA-AIA",
+        "VER-EVA-GRV",
+        "VER-EVA-EFP",
+        "VER-EVA-EFA",
+        "VER-RPT-PER",
+        "VER-RPT-VDT",
+        "VER-RPT-AVI",
+        "VER-RPT-NID",
+        "VER-RPT-HLO",
+        "VER-RPT-RPD",
+        "VER-TFR-MHR",
+        "VER-TFR-MAV",
+        "VER-TFR-MRH",
+        "VER-TFR-EVU",
+        "VER-TFR-IRI",
+        "VER-TFR-NRI"
+      ],
+      "properties": {
+        "VDR-CSO-DET": {
+          "$ref": "#/$defs/response",
+          "title": "Vulnerability Detection"
+        },
+        "VDR-CSO-RES": {
+          "$ref": "#/$defs/response",
+          "title": "Vulnerability Response"
+        },
+        "VDR-CSO-FAV": {
+          "$ref": "#/$defs/response",
+          "title": "Failures Are Vulnerabilities"
+        },
+        "VDR-CSO-DFR": {
+          "$ref": "#/$defs/response",
+          "title": "Design For Resilience"
+        },
+        "VDR-CSO-ADT": {
+          "$ref": "#/$defs/response",
+          "title": "Automate Detection"
+        },
+        "VDR-CSO-DAC": {
+          "$ref": "#/$defs/response",
+          "title": "Detect After Changes"
+        },
+        "VDR-CSO-MSP": {
+          "$ref": "#/$defs/response",
+          "title": "Maintain Security"
+        },
+        "VDR-CSO-AKE": {
+          "$ref": "#/$defs/response",
+          "title": "Avoid KEVs"
+        },
+        "VDR-CSO-SIR": {
+          "$ref": "#/$defs/response",
+          "title": "Sampling"
+        },
+        "VDR-TFR-NMV": {
+          "$ref": "#/$defs/response",
+          "title": "Non-Machine Verification and Validation"
+        },
+        "VDR-TFR-PDD": {
+          "$ref": "#/$defs/response",
+          "title": "Persistent Drift Detection"
+        },
+        "VDR-TFR-PCD": {
+          "$ref": "#/$defs/response",
+          "title": "Persistently Complete Detection"
+        },
+        "VDR-TFR-PVR": {
+          "$ref": "#/$defs/response",
+          "title": "Mitigation and Remediation Expectations"
+        },
+        "VDR-TFR-RMN": {
+          "$ref": "#/$defs/response",
+          "title": "Remaining Vulnerabilities"
+        },
+        "VDR-TFR-KEV": {
+          "$ref": "#/$defs/response",
+          "title": "Remediate KEVs"
+        },
+        "VDR-TFR-PSD": {
+          "$ref": "#/$defs/response",
+          "title": "Persistent Sample Detection"
+        },
+        "VDR-TFR-MVX": {
+          "$ref": "#/$defs/response",
+          "title": "Persistent Machine Verification and Validation for 20x"
+        },
+        "VDR-TFR-MVF": {
+          "$ref": "#/$defs/response",
+          "title": "Persistent Machine Verification and Validation for Rev5"
+        },
+        "VER-EVA-ELX": {
+          "$ref": "#/$defs/response",
+          "title": "Evaluate Exploitability"
+        },
+        "VER-EVA-EIR": {
+          "$ref": "#/$defs/response",
+          "title": "Evaluate Internet-Reachability"
+        },
+        "VER-EVA-EPA": {
+          "$ref": "#/$defs/response",
+          "title": "Estimate Potential Agency Impact"
+        },
+        "VER-EVA-AIA": {
+          "$ref": "#/$defs/response",
+          "title": "Assume It's Automatable"
+        },
+        "VER-EVA-GRV": {
+          "$ref": "#/$defs/response",
+          "title": "Group Vulnerabilities"
+        },
+        "VER-EVA-EFP": {
+          "$ref": "#/$defs/response",
+          "title": "Evaluate False Positives"
+        },
+        "VER-EVA-EFA": {
+          "$ref": "#/$defs/response",
+          "title": "Evaluation Factors"
+        },
+        "VER-RPT-PER": {
+          "$ref": "#/$defs/response",
+          "title": "Persistent Reporting"
+        },
+        "VER-RPT-VDT": {
+          "$ref": "#/$defs/response",
+          "title": "Vulnerability Details"
+        },
+        "VER-RPT-AVI": {
+          "$ref": "#/$defs/response",
+          "title": "Accepted Vulnerability Info"
+        },
+        "VER-RPT-NID": {
+          "$ref": "#/$defs/response",
+          "title": "Responsible Disclosure"
+        },
+        "VER-RPT-HLO": {
+          "$ref": "#/$defs/response",
+          "title": "High-Level Overviews"
+        },
+        "VER-RPT-RPD": {
+          "$ref": "#/$defs/response",
+          "title": "Responsible Public Disclosure"
+        },
+        "VER-TFR-MHR": {
+          "$ref": "#/$defs/response",
+          "title": "Monthly Activity Report"
+        },
+        "VER-TFR-MAV": {
+          "$ref": "#/$defs/response",
+          "title": "Mark Accepted Vulnerabilities"
+        },
+        "VER-TFR-MRH": {
+          "$ref": "#/$defs/response",
+          "title": "Historical Activity"
+        },
+        "VER-TFR-EVU": {
+          "$ref": "#/$defs/response",
+          "title": "Evaluate Vulnerabilities Quickly"
+        },
+        "VER-TFR-IRI": {
+          "$ref": "#/$defs/response",
+          "title": "Internet-Reachable Incidents"
+        },
+        "VER-TFR-NRI": {
+          "$ref": "#/$defs/response",
+          "title": "Non-Internet-Reachable Incidents"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "metadata": {
+            "properties": {
+              "framework": {
+                "const": "Rev5"
+              },
+              "class": {
+                "const": "B"
+              }
+            },
+            "required": [
+              "framework",
+              "class"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "metadata"
+        ],
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "responses": {
+            "properties": {
+              "VDR-TFR-MVX": {
+                "properties": {
+                  "status": {
+                    "const": "Not Applicable"
+                  }
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "metadata": {
+            "properties": {
+              "framework": {
+                "const": "Rev5"
+              },
+              "class": {
+                "const": "C"
+              }
+            },
+            "required": [
+              "framework",
+              "class"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "metadata"
+        ],
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "responses": {
+            "properties": {
+              "VDR-TFR-MVX": {
+                "properties": {
+                  "status": {
+                    "const": "Not Applicable"
+                  }
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "metadata": {
+            "properties": {
+              "framework": {
+                "const": "Rev5"
+              },
+              "class": {
+                "const": "D"
+              }
+            },
+            "required": [
+              "framework",
+              "class"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "metadata"
+        ],
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "responses": {
+            "properties": {
+              "VDR-TFR-MVX": {
+                "properties": {
+                  "status": {
+                    "const": "Not Applicable"
+                  }
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "metadata": {
+            "properties": {
+              "framework": {
+                "const": "20x"
+              },
+              "class": {
+                "const": "B"
+              }
+            },
+            "required": [
+              "framework",
+              "class"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "metadata"
+        ],
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "responses": {
+            "properties": {
+              "VDR-TFR-MVF": {
+                "properties": {
+                  "status": {
+                    "const": "Not Applicable"
+                  }
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "metadata": {
+            "properties": {
+              "framework": {
+                "const": "20x"
+              },
+              "class": {
+                "const": "C"
+              }
+            },
+            "required": [
+              "framework",
+              "class"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "metadata"
+        ],
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "responses": {
+            "properties": {
+              "VDR-TFR-MVF": {
+                "properties": {
+                  "status": {
+                    "const": "Not Applicable"
+                  }
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ],
+  "$defs": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "rulesVersion",
+        "providerName",
+        "offeringName",
+        "framework",
+        "class",
+        "asOfDate"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "rulesVersion": {
+          "const": "2026.10.13.01"
+        },
+        "providerName": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "offeringName": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "framework": {
+          "enum": [
+            "Rev5",
+            "20x"
+          ]
+        },
+        "class": {
+          "enum": [
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "asOfDate": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "fedrampId": {
+          "type": "string",
+          "anyOf": [
+            {
+              "const": ""
+            },
+            {
+              "pattern": "\\S"
+            }
+          ],
+          "description": "Official offering identifier, if available; leave blank for fictional examples."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "framework": {
+                "const": "20x"
+              }
+            },
+            "required": [
+              "framework"
+            ],
+            "type": "object"
+          },
+          "then": {
+            "properties": {
+              "class": {
+                "enum": [
+                  "B",
+                  "C"
+                ]
+              }
+            },
+            "type": "object"
+          }
+        }
+      ]
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "explanation"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "Fully Addressed",
+            "Partially Addressed",
+            "Not Addressed",
+            "Not Applicable"
+          ],
+          "title": "Implementation status"
+        },
+        "explanation": {
+          "type": "string",
+          "pattern": "\\S",
+          "description": "Explain how the rule is followed, or why it is not followed and the resulting customer risk; explain any Not Applicable response."
+        },
+        "completionTarget": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            {
+              "enum": [
+                "",
+                "Unknown",
+                "Not Planned"
+              ]
+            }
+          ],
+          "description": "For incomplete rules, give a date or an explicit exception."
+        },
+        "completionTargetExplanation": {
+          "type": "string",
+          "anyOf": [
+            {
+              "const": ""
+            },
+            {
+              "pattern": "\\S"
+            }
+          ],
+          "description": "Explain Unknown or Not Planned targets."
+        },
+        "customerRisk": {
+          "type": "string",
+          "anyOf": [
+            {
+              "const": ""
+            },
+            {
+              "pattern": "\\S"
+            }
+          ],
+          "description": "Risk this implementation status poses to federal agency customers."
+        },
+        "providerCompensation": {
+          "type": "string",
+          "anyOf": [
+            {
+              "const": ""
+            },
+            {
+              "pattern": "\\S"
+            }
+          ],
+          "description": "How the provider compensates for the risk; explicitly state if none."
+        },
+        "agencyCompensation": {
+          "type": "string",
+          "anyOf": [
+            {
+              "const": ""
+            },
+            {
+              "pattern": "\\S"
+            }
+          ],
+          "description": "How agencies can compensate for the risk; explicitly state if none."
+        },
+        "additionalAssurance": {
+          "type": "string",
+          "anyOf": [
+            {
+              "const": ""
+            },
+            {
+              "pattern": "\\S"
+            }
+          ],
+          "description": "Optional additional assurance about implementation."
+        },
+        "feedback": {
+          "type": "string",
+          "anyOf": [
+            {
+              "const": ""
+            },
+            {
+              "pattern": "\\S"
+            }
+          ],
+          "description": "Optional feedback about the rule."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "Partially Addressed",
+                  "Not Addressed"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ],
+            "type": "object"
+          },
+          "then": {
+            "required": [
+              "completionTarget",
+              "customerRisk",
+              "providerCompensation",
+              "agencyCompensation"
+            ],
+            "properties": {
+              "completionTarget": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "customerRisk": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "providerCompensation": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "agencyCompensation": {
+                "type": "string",
+                "pattern": "\\S"
+              }
+            },
+            "type": "object"
+          },
+          "else": {
+            "properties": {
+              "completionTarget": {
+                "const": ""
+              },
+              "completionTargetExplanation": {
+                "const": ""
+              }
+            },
+            "type": "object"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "completionTarget": {
+                "enum": [
+                  "Unknown",
+                  "Not Planned"
+                ]
+              }
+            },
+            "required": [
+              "completionTarget"
+            ],
+            "type": "object"
+          },
+          "then": {
+            "required": [
+              "completionTargetExplanation"
+            ],
+            "properties": {
+              "completionTargetExplanation": {
+                "type": "string",
+                "pattern": "\\S"
+              }
+            },
+            "type": "object"
+          }
+        }
+      ]
+    }
+  }
+}

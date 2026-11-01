@@ -94,7 +94,7 @@ await writeFile('schemas/implementation-status.csvs', [
   '// UTF-8 CSV with a header row; column order is fixed.',
   '// Companion validator also checks exact headers, all rule IDs, metadata consistency,',
   '// optional whitespace, and calendar dates. This is a collection schema, not a general CSV engine.',
-  ...COLUMNS.map(k => `${k}: ${csvRules[k].replace(/\$([A-Za-z]+)\\/g, '$$$1/')}`), ''
+  ...COLUMNS.map(k => `${k}: ${csvRules[k].replace(/\$([A-Za-z]+)\\/g, '$$$1/')}`.trimEnd()), ''
 ].join('\n'));
 
 const blankRows = catalog.rules.map(rule => COLUMNS.map(key => key === 'ruleId' ? rule.id : key === 'schemaVersion' ? SCHEMA_VERSION : key === 'rulesVersion' ? source.info.version : ''));

@@ -30,6 +30,7 @@ The collection captures implementation status, not individual vulnerabilities. D
 - Edit `scripts/generate.mjs` to change generated schemas, CSV template, or catalog behavior.
 - `scripts/build.mjs` generates the coverage report, copies downloads, bundles browser code, builds Zensical, and verifies built artifacts.
 - Never edit `docs/downloads/`, `docs/assets/validator.js`, or `site/` directly; these are ignored generated output.
+- `lib/sample-view.mjs` renders readable sample pages and calculates status totals from the authored JSON. `scripts/build.mjs` validates samples before generating `docs/samples/`; never hand-edit that ignored directory. Preserve every nonempty response field and resolve mandatory-rule summaries using the offering's framework and class. Status totals describe reported answers, not compliance scores.
 - Generated schemas, catalog, template, CSV examples, and coverage report are tracked so they can be reviewed and used without building.
 - The source snapshot is not generated during ordinary builds. Preserve it byte-for-byte until a deliberate update.
 

@@ -11,3 +11,29 @@
 #validation-summary[data-valid="true"] { color: #17623c; }
 #validation-summary[data-valid="false"] { color: #a32121; }
 #validation-errors { overflow-wrap: anywhere; }
+.sample-nav { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+.sample-nav a, .sample-nav span { padding: .4rem .8rem; border: 1px solid #c6cbd7; border-radius: .25rem; }
+.sample-nav [aria-current] { background: #334699; color: #fff; font-weight: 600; }
+.sample-meta { color: #505a6c; }
+.md-typeset .sample-counts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6rem; margin: 1rem 0; }
+.sample-count { border: 1px solid #d6dae2; border-top: 4px solid #718096; border-radius: .3rem; padding: .65rem; }
+.md-typeset .sample-count dt { margin: 0; font-size: .72rem; font-weight: 600; }
+.md-typeset .sample-count dd { margin: .25rem 0 0; font-size: 1.6rem; font-weight: 700; line-height: 1.2; }
+.sample-count.full { border-top-color: #287449; }
+.sample-count.partial { border-top-color: #936408; }
+.sample-count.unaddressed { border-top-color: #ac3030; }
+.sample-rule { margin: 1.3rem 0; padding: 1rem; border: 1px solid #d6dae2; border-radius: .3rem; overflow-wrap: anywhere; }
+.md-typeset .sample-rule h3 { margin: 0 0 .5rem; font-weight: 650; }
+.sample-rule-id { display: block; font-family: ui-monospace, monospace; font-size: .7rem; margin-bottom: .2rem; }
+.sample-rule-meta { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem; font-size: .72rem; }
+.sample-status { display: inline-block; padding: .2rem .5rem; border-radius: .2rem; font-weight: 650; }
+.sample-status.full { color: #205b39; background: #eaf5ed; }
+.sample-status.partial { color: #754e00; background: #fff5da; }
+.sample-status.unaddressed { color: #922424; background: #fcecec; }
+.sample-status.na { color: #4a5568; background: #edf0f5; }
+.md-typeset .sample-rule dl { margin-bottom: 0; }
+.md-typeset .sample-rule dt { font-size: .72rem; font-weight: 650; margin-top: .8rem; }
+.md-typeset .sample-rule dd { margin: .2rem 0 0; white-space: pre-wrap; }
+.sample-nav :focus-visible, .sample-rule a:focus-visible { outline: 3px solid #b05c00; outline-offset: 3px; }
+@media (max-width: 600px) { .md-typeset .sample-counts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media print { .sample-rule { break-inside: avoid; } .sample-nav { display: none; } }

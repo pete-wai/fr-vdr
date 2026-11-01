@@ -2,6 +2,7 @@ node_modules/
 .venv/
 site/
 docs/downloads/
+docs/samples/
 docs/assets/validator.js
 .cache/
 __pycache__/

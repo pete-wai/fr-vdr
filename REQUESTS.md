@@ -198,3 +198,11 @@ Create these root-level files:
 Preserve request history rather than overwriting it. Keep the public site focused on completing and validating submissions; retain detailed implementation history in the repository.
 
 <!-- End verbatim user message -->
+
+## Sample viewer request — November 1, 2026
+
+<!-- Begin verbatim user message -->
+
+Please add a sample viewer that shows nicely formatted versions of the samples in a readable format, including a summary at the top of their implementation status generated from the sample data.
+
+<!-- End verbatim user message -->

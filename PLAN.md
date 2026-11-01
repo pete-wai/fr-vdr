@@ -96,3 +96,7 @@ Preserve request history rather than overwriting it. Keep the public site focuse
 - The current source supports Rev5 B/C/D and 20x B/C after intersecting parent applicability with framework variants. Class A contradictions and 20x D’s missing machine-verification variant are explicitly reported.
 - The browser validator accepts files up to 5 MB and provides an editable text area; the CLI handles larger files.
 - Root request history is retained separately from the four succinct public documentation pages.
+
+## Sample viewer extension — November 1, 2026
+
+Add three generated reading pages, linked from Examples and from each other. Each page shows offering metadata, four status totals, the number of applicable MUST/MUST NOT rules reported Fully Addressed, and all nonempty response fields grouped under VDR and VER. Calculate summaries from the authored sample JSON and resolve rule force against the offering's class. Keep download and validation links available. Render static pages during the existing build so the viewer also works without JavaScript; escape sample text and validate source submissions before rendering. Verify summary arithmetic, all-field coverage, mobile layout, keyboard navigation, built links, and the public deployment.

@@ -10,6 +10,8 @@ One file describes one offering. Both formats require all 37 provider-directed r
 
 Examples are fictional snapshots dated December 7, 2026, not official FedRAMP submissions. Passing validation checks the collection structure and completeness, not compliance or the truth of implementation claims.
 
+[Read the formatted samples](https://pete-wai.github.io/fr-vdr/examples/) with generated status summaries and complete rule-by-rule answers. These views are rebuilt from the same JSON files as the downloads.
+
 ## Local use
 
 Install [mise](https://mise.jdx.dev/) first. Run from the repository root:

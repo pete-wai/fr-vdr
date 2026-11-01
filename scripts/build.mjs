@@ -2,6 +2,8 @@ import {mkdir, copyFile, readFile, writeFile, rm} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import {build} from 'esbuild';
 import {DOWNLOADS} from './downloads.mjs';
+import {SAMPLES, renderSample} from '../lib/sample-view.mjs';
+import {validateSubmission} from '../lib/validate.mjs';
 const catalog=JSON.parse(await readFile('data/rule-catalog.json','utf8'));
 const pin=JSON.parse(await readFile('data/provenance.json','utf8'));
 const report=[
@@ -25,6 +27,13 @@ await writeFile('data/coverage-report.md',report.join('\n'));
 await rm('docs/downloads',{recursive:true,force:true});
 await mkdir('docs/downloads',{recursive:true});
 for(const [source,name] of DOWNLOADS) await copyFile(source,`docs/downloads/${name}`);
+await mkdir('docs/samples',{recursive:true});
+for (const {slug} of SAMPLES) {
+  const sample = JSON.parse(await readFile(`examples/${slug}.json`, 'utf8'));
+  const result = validateSubmission(sample);
+  if (!result.valid) throw new Error(`Cannot publish invalid sample ${slug}: ${JSON.stringify(result.errors)}`);
+  await writeFile(`docs/samples/${slug}.md`, renderSample(sample, catalog, slug));
+}
 await build({entryPoints:['lib/browser.mjs'],bundle:true,outfile:'docs/assets/validator.js',minify:true,format:'iife',platform:'browser',target:['es2022'],legalComments:'eof'});
 execFileSync('uv',['run','--locked','zensical','build','--clean'],{stdio:'inherit'});
 execFileSync(process.execPath,['scripts/check-coverage.mjs','--published'],{stdio:'inherit'});

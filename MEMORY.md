@@ -34,3 +34,11 @@ Next: create the public repository, configure GitHub Pages, verify the deployed 
 - This final documentation-only commit does not change the deployed site and uses `[skip ci]` to avoid rebuilding unchanged artifacts.
 
 No implementation or publication work remains. Future maintenance should start with an explicit upstream comparison and review of any rule changes; the known applicability limitations remain documented rather than silently resolved.
+
+## 2026-11-01 — Sample viewer extension
+
+Added a generated reading page for each sample, linked from Examples, with offering metadata, four data-derived status totals, applicable mandatory-rule progress, and all populated response fields grouped by VDR/VER. Views use the authored JSON and pinned rule catalog, validate data before rendering, escape text, and work without JavaScript. Source schemas and submissions are unchanged.
+
+Local build passes 39 tests, including new checks for summary arithmetic, mandatory applicability, every response field, and HTML escaping. Browser verification and publication are in progress.
+
+Browser QA confirmed all 37 rule cards render, sample switching works by keyboard, and status cards adapt to a two-column mobile layout. Harbor totals are 24 Fully Addressed, 9 Partially Addressed, 3 Not Addressed, and 1 Not Applicable; Smallbrook totals are 9, 22, 5, and 1. The built site passed 143 local-link checks. Publishing this extension through the existing Pages workflow.

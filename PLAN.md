@@ -100,3 +100,48 @@ Preserve request history rather than overwriting it. Keep the public site focuse
 ## Sample viewer extension — November 1, 2026
 
 Add three generated reading pages, linked from Examples and from each other. Each page shows offering metadata, four status totals, the number of applicable MUST/MUST NOT rules reported Fully Addressed, and all nonempty response fields grouped under VDR and VER. Calculate summaries from the authored sample JSON and resolve rule force against the offering's class. Keep download and validation links available. Render static pages during the existing build so the viewer also works without JavaScript; escape sample text and validate source submissions before rendering. Verify summary arithmetic, all-field coverage, mobile layout, keyboard navigation, built links, and the public deployment.
+
+## Direct explanations and a sourced VDR/VER FAQ — November 1, 2026
+
+Accepted plan for the editorial extension:
+
+### Summary
+
+Revise the site's explanatory text and add a FAQ grounded in questions and responses from FedRAMP's GitHub discussions. Follow pete-gov's direct, practical tone: answer first, explain the reasoning, and describe what providers need to do.
+
+Keep all example responses, JSON/CSV files, schemas, validation behavior, and the pinned rules unchanged.
+
+### Research and source handling
+
+Use the FedRAMP MCP to retrieve relevant discussions from both FedRAMP/community and FedRAMP/2026, including resolved comments and historical discussions. Search rule IDs, ruleset names, and related terminology; paginate results, deduplicate comments, and retrieve surrounding questions and replies. Save the relevant comment corpus and research index with URLs, authors, dates, parent relationships, retrieval dates, and answer mappings. Describe coverage as the imported MCP snapshot and record gaps or limits. Check answers against the pinned rules and applicable definitions; distinguish historical guidance, proposed changes, and personal suggestions without silently updating requirements.
+
+### Editorial changes and FAQ
+
+Revise Overview, Schemas and template, Examples introductions, Validate instructions, sample-viewer explanatory text, and the README introduction. Preserve exact field names and status labels. Use ordinary sentences and concrete instructions; avoid impersonation, jokes, confrontational wording, slogans, and repetitive cadences.
+
+Add a FAQ navigation entry and a compact page with linked question headings covering:
+
+1. How VDR and VER fit together.
+2. SHOULD and explanations of different approaches.
+3. Reporting templates and the purpose of this prototype.
+4. What passing validation means.
+5. Scanners and testing techniques.
+6. Sampling and detection after changes.
+7. PAIN, CVSS, and evaluation factors.
+8. False positives.
+9. Mitigation, remediation, and acceptance.
+10. Evaluation/response clocks and calendar days.
+11. Vendor fixes and delayed upgrades.
+12. Vulnerabilities treated as reportable incidents.
+13. Trust-center transition.
+14. Adoption dates and implementation evidence.
+
+Keep answers short. Link to the relevant GitHub question and response and official rules. Identify prototype-specific answers as project guidance; do not establish a submission deadline.
+
+### Verification and publication
+
+Review source support, class/framework qualifications, historical context, and MUST/SHOULD terminology. Confirm example data and downloadable artifacts remain byte-for-byte unchanged. Run existing build, validation, coverage, and link checks; inspect navigation, headings, keyboard access, mobile layout, and sample-viewer explanations. Publish using the existing GitHub Actions workflow and verify deployed FAQ links under /fr-vdr/.
+
+### Retained documentation
+
+Append the request verbatim to REQUESTS.md, record this plan in PLAN.md, and document coverage, decisions, checks, and deployment results in MEMORY.md. Update AGENTS.md with source-review and tone conventions.

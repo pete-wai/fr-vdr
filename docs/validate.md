@@ -1,6 +1,6 @@
 # Validate a file
 
-Select a completed JSON or CSV file, or load an example. Validation runs in your browser; file contents are not uploaded or saved. Files up to 5 MB are supported here; use the command-line validator for larger files.
+Choose a completed JSON or CSV file, or load an example. Your browser checks the file locally without uploading or saving its contents. Use the command-line validator below for files larger than 5 MB.
 
 <div id="validator" class="validator">
   <label for="submission-file">JSON or CSV file</label>
@@ -32,9 +32,9 @@ Select a completed JSON or CSV file, or load an example. Validation runs in your
 
 <noscript>Enable JavaScript to use the browser validator, or use the command-line instructions below.</noscript>
 
-Errors identify the rule and field where possible. CSV row numbers count records including the header; a quoted cell containing line breaks still belongs to one record. A **Not Applicable** response for a rule that normally applies produces a review note.
+Use the rule and field names in each error to find the answer that needs fixing. CSV row numbers include the header; line breaks inside a quoted cell do not create extra rows. If you choose **Not Applicable** for a rule that normally applies, the validator asks a reviewer to check your explanation.
 
-The validator checks required answers, dates, statuses, duplicate or missing rules, and offering metadata. It cannot verify a provider’s implementation or the quality of an explanation.
+The validator checks required answers, dates, statuses, duplicate or missing rules, and offering metadata. It cannot tell whether your implementation works or your explanation is adequate. See [what passing validation means](faq.md#does-passing-this-validator-mean-we-meet-the-rules).
 
 ## Command line
 

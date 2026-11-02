@@ -44,3 +44,13 @@ Local build passes 39 tests, including new checks for summary arithmetic, mandat
 Browser QA confirmed all 37 rule cards render, sample switching works by keyboard, and status cards adapt to a two-column mobile layout. Harbor totals are 24 Fully Addressed, 9 Partially Addressed, 3 Not Addressed, and 1 Not Applicable; Smallbrook totals are 9, 22, 5, and 1. The built site passed 143 local-link checks. Publishing this extension through the existing Pages workflow.
 
 Published commit `a05f8bb38b6ec78ac99d89ac0002e46a505956cb` successfully in Actions run https://github.com/pete-wai/fr-vdr/actions/runs/41357963895. Verified all three public `/samples/{automated,legacy,availability}/` pages return HTTP 200, contain all 37 rule responses, and show totals matching their source JSON. Confirmed the Harbor viewer in the public browser. All 39 tests and deployment checks passed. This final log-only update uses `[skip ci]`; the deployed site is unchanged.
+
+## 2026-11-01 — Direct explanations and sourced FAQ
+
+Implemented the approved editorial plan. Revised public explanations and added 14 FAQ answers with direct discussion and official-rule links. No example answers or collection contracts were changed. Retained the request, plan, and editorial maintenance instructions.
+
+FedRAMP MCP research retrieved 2,154 distinct discussion/context documents and retained 427 relevant/context records, including 127 by pete-gov. Both discussion sources reported successful imports on November 1 without gaps. Full pagination completed without retrieval failures; coverage remains limited to the imported snapshot and documented search/context method. The corpus, candidate index, official context, answer source map, and historical interpretation notes are in `research/`.
+
+Source review preserved class-specific incident forces, the precise accepted-vulnerability trigger, official report schemas, the separate KEV rule, and the distinction between a prototype validator and FedRAMP's validator. Build, browser QA, artifact parity, and publication verification are pending.
+
+Local verification passed: 39 tests, exact 37-rule coverage, generated-download parity, and 172 local links/assets. Every FAQ discussion citation exists in the retained corpus; all six referenced official page URLs returned HTTP 200 and all cited section anchors exist. Browser QA confirmed keyboard activation of FAQ headings, navigation to the validator, successful sample validation, and readable 390-pixel layout with no horizontal overflow. Temporary viewport overrides were reset. Git confirms no changes to examples, schemas, template, pinned data, or PERSONA.md. Publishing through the existing workflow.

@@ -2,17 +2,17 @@
 
 [Download JSON Schema](downloads/implementation-status.schema.json) · [Download CSV Schema](downloads/implementation-status.csvs) · [Download CSV template](downloads/implementation-status-template.csv)
 
-Use one file per offering. Include every provider rule once, including MAY and negative requirements such as MUST NOT. The rule’s strength does not change the response fields.
+Use one file per offering. Include every provider rule once, including MAY and negative requirements such as MUST NOT. Answer the same questions whether the rule says MUST, SHOULD, or MAY.
 
 ## Answer each rule
 
 Choose **Fully Addressed**, **Partially Addressed**, **Not Addressed**, or **Not Applicable**.
 
-Explain how you follow the rule. If you do not follow it, explain why and describe the resulting customer risk. For **Not Applicable**, explain the circumstances; an implementation gap or a decision not to adopt a SHOULD recommendation does not by itself make a rule inapplicable.
+Explain how you follow the rule. If you do not follow it, explain why and describe the resulting customer risk. For **Not Applicable**, explain why the rule does not apply. Do not use it just because you have not implemented a rule or have decided not to follow a SHOULD recommendation. See the [FAQ on SHOULD](faq.md#what-does-should-mean).
 
-For **Partially Addressed** or **Not Addressed**, supply a completion target and separate answers for customer risk, provider compensation, and agency compensation. If there is no compensation, say so. Use **Unknown** or **Not Planned** only with an explanation. Leave the completion target empty for other statuses.
+For **Partially Addressed** or **Not Addressed**, give a completion target. Explain the customer risk, what you do to reduce it, and what agencies can do to reduce it in the three separate fields. If there are no compensating measures, say so. Use **Unknown** or **Not Planned** only with an explanation. Leave the completion target empty for other statuses.
 
-Describe how you handle conditional requirements even if the triggering event has not occurred. A MAY rule can be fully addressed by explaining a permitted choice not to exercise the option. Optional assurance and feedback can be left blank.
+If a rule applies when something happens, explain how you will handle that event even if it has not happened yet. For a MAY rule, you can explain your choice not to use the option and report it as Fully Addressed. Optional assurance and feedback can be left blank.
 
 ## Fields
 
@@ -41,10 +41,10 @@ JSON uses a `metadata` object and a `responses` object keyed by rule ID. CSV rep
 
 ## File conventions
 
-Save CSV as UTF-8 with a header. Spreadsheet software normally quotes commas, quotation marks, and line breaks when exporting CSV. Use ISO dates as text so they remain `YYYY-MM-DD`; do not add a leading apostrophe to the exported value. An unfinished template is expected to fail validation.
+Save CSV as UTF-8 with a header. Spreadsheet software normally quotes commas, quotation marks, and line breaks when exporting CSV. Use ISO dates as text so they remain `YYYY-MM-DD`; do not add a leading apostrophe to the exported value. The blank template will fail validation until you complete it.
 
-In JSON, omit unused optional fields or use empty strings; do not use `null`. Completion targets must be actual calendar dates or the exact exception labels. A target in the past is preserved for review rather than silently changed.
+In JSON, omit unused optional fields or use empty strings; do not use `null`. Completion targets must be actual calendar dates or the exact exception labels. The validator leaves past target dates unchanged so reviewers can see them.
 
 The [JSON Schema](https://json-schema.org/) uses Draft 2020-12. Enable date-format validation in external validators. The `.csvs` file uses [CSV Schema Language 1.1](https://digital-preservation.github.io/csv-schema/csv-schema-1.1.html), supported by the reference validator. It checks column rules; the companion validator also checks complete rule coverage, exact headers, consistent metadata, and applicability. The browser tool validates this collection format, not arbitrary uploaded schema files.
 
-Validation checks structure and completeness. People must assess whether the explanation is accurate, whether a claimed exception is justified, and whether the implementation adequately addresses the rule.
+A valid file has the required answers in the expected format. Reviewers still need to check whether the answers are accurate and whether your approach addresses the rules.

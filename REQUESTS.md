@@ -206,3 +206,21 @@ Preserve request history rather than overwriting it. Keep the public site focuse
 Please add a sample viewer that shows nicely formatted versions of the samples in a readable format, including a summary at the top of their implementation status generated from the sample data.
 
 <!-- End verbatim user message -->
+
+## Editorial tone and FAQ request — November 1, 2026
+
+<!-- Begin verbatim user message -->
+
+For the explainer and background text, I want you to use a simpler more direct tone that matches that used by pete-gov in comments about the VDR/VER on GitHub. I also want you to create a FAQ page based on questions that are have been asked about the VDR or VER in GitHub (either in FedRAMP Community or in 2026 comments). Use the FedRAMP MCP server to grab all the comments related to VDR or VER and pete-gov's responses to inform the overall tone and the FAQ and the answers.
+
+No need to rewrite any of the examples though.
+
+<!-- End verbatim user message -->
+
+## Implementation approval — November 1, 2026
+
+<!-- Begin verbatim user message -->
+
+Implement the proposed plan.
+
+<!-- End verbatim user message -->

@@ -2,7 +2,7 @@
 
 **example prototype for discussion**
 
-Draft collection schemas and examples for provider implementation of FedRAMP Vulnerability Detection and Response (VDR) and Vulnerability Evaluation and Reporting (VER).
+Use these draft schemas to describe how a cloud service offering implements FedRAMP Vulnerability Detection and Response (VDR) and Vulnerability Evaluation and Reporting (VER). Explain what you do for each rule, where you have gaps, and what those gaps mean for agency customers.
 
 **[Open the site](https://pete-wai.github.io/fr-vdr/)** · [JSON Schema](schemas/implementation-status.schema.json) · [CSV Schema](schemas/implementation-status.csvs) · [CSV template](templates/implementation-status.csv)
 
@@ -11,6 +11,8 @@ One file describes one offering. Both formats require all 37 provider-directed r
 Examples are fictional snapshots dated December 7, 2026, not official FedRAMP submissions. Passing validation checks the collection structure and completeness, not compliance or the truth of implementation claims.
 
 [Read the formatted samples](https://pete-wai.github.io/fr-vdr/examples/) with generated status summaries and complete rule-by-rule answers. These views are rebuilt from the same JSON files as the downloads.
+
+Read the [FAQ](https://pete-wai.github.io/fr-vdr/faq/) for answers grounded in FedRAMP’s GitHub discussions. The [research record](research/README.md) documents sources and historical differences.
 
 ## Local use
 

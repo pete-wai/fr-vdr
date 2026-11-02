@@ -85,3 +85,11 @@ Use the schemas’ exact labels in instructions. Do not soften a MUST gap into a
 The public repository is `pete-wai/fr-vdr`; the site is `https://pete-wai.github.io/fr-vdr/`. GitHub Pages uses Actions, with read-only contents permission plus Pages/OIDC permissions in the deploy job. PRs run validation and build without deploying. Passing `main` builds deploy. Do not commit provider submissions, credentials, generated site files, or machine-specific cache paths.
 
 Update `MEMORY.md` with actual completed checks, limitations, source revisions, and deployment outcome. Do not mark planned work complete until verified. Preserve unrelated edits and keep request history append-only.
+
+## Discussion-based explanations and FAQ
+
+For explanatory prose, answer the reader's question first, explain the reason, and say what the provider needs to do. Follow the directness of pete-gov's VDR/VER responses without copying jokes, dismissive language, or personal mannerisms. Do not imply authorship or endorsement by pete-gov or FedRAMP.
+
+Use the FedRAMP MCP for discussion research without subagents. Search Community and 2026 commentary with resolved material included, paginate fully, fetch parent/reply context, and preserve dates and source metadata. Maintain `research/README.md`, the corpus/index, official context, and FAQ source map. State imported-snapshot limitations honestly.
+
+Rules in the pinned canonical dataset govern requirements. Check class-specific forces and current identifiers; do not promote a historical answer, personal suggestion, preview rule, or future proposal into a requirement. The FAQ links questions and responses, distinguishes prototype behavior, and retains source-specific caveats. After editing FAQ links, refresh its source map and verify cited discussion URLs exist in the corpus. Explanatory text may change independently of examples; do not rewrite example answers without a request to do so.

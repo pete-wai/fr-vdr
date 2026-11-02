@@ -1,0 +1,258 @@
+[
+  {
+    "question": "How do VDR and VER fit together?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/2026/discussions/46#discussioncomment-17330062",
+        "id": "commentary:DC_kwDORpyFmc4BCG-O",
+        "author": "pete-gov",
+        "publishedAt": "2026-06-16T22:25:48Z",
+        "parentQuestion": "https://github.com/FedRAMP/2026/discussions/46#discussioncomment-17329268",
+        "historicalPreview": true
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/reference/vulnerability-detection-and-response/",
+      "https://www.fedramp.gov/2026/reference/vulnerability-evaluation-and-reporting/"
+    ]
+  },
+  {
+    "question": "What does SHOULD mean?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-18758517",
+        "id": "community:DC_kwDOOxfoic4BHjt1",
+        "author": "pete-gov",
+        "publishedAt": "2026-10-05T11:39:59Z",
+        "parentQuestion": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-18739655",
+        "historicalPreview": false
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/rules/#force-of-the-rule"
+    ]
+  },
+  {
+    "question": "Does FedRAMP require a particular reporting template?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/2026/discussions/90#discussioncomment-18722032",
+        "id": "commentary:DC_kwDORpyFmc4BHazw",
+        "author": "pete-gov",
+        "publishedAt": "2026-10-02T20:58:22Z",
+        "parentQuestion": "https://github.com/FedRAMP/2026/discussions/90#discussioncomment-18721123",
+        "historicalPreview": false
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/reference/vulnerability-evaluation-and-reporting/#reporting"
+    ]
+  },
+  {
+    "question": "Does passing this validator mean we meet the rules?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/2026/discussions/102#discussioncomment-17803687",
+        "id": "commentary:DC_kwDORpyFmc4BD6mn",
+        "author": "pete-gov",
+        "publishedAt": "2026-07-27T21:26:45Z",
+        "parentQuestion": "https://github.com/FedRAMP/2026/discussions/102#discussioncomment-17802815",
+        "historicalPreview": false
+      }
+    ],
+    "officialReferences": []
+  },
+  {
+    "question": "Do we have to use scanners or a particular testing technique?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/2026/discussions/119#discussioncomment-18403986",
+        "id": "commentary:DC_kwDORpyFmc4BGNKS",
+        "author": "pete-gov",
+        "publishedAt": "2026-09-11T17:13:24Z",
+        "parentQuestion": "https://github.com/FedRAMP/2026/discussions/119#discussioncomment-18403844",
+        "historicalPreview": false
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/reference/vulnerability-detection-and-response/#vulnerability-detection"
+    ]
+  },
+  {
+    "question": "When can we use samples, and what changes trigger detection?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/2026/discussions/103#discussioncomment-17817425",
+        "id": "commentary:DC_kwDORpyFmc4BD99R",
+        "author": "pete-gov",
+        "publishedAt": "2026-07-28T19:51:47Z",
+        "parentQuestion": "https://github.com/FedRAMP/2026/discussions/103#discussioncomment-17816729",
+        "historicalPreview": false
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/reference/vulnerability-detection-and-response/#sampling",
+      "https://www.fedramp.gov/2026/reference/vulnerability-detection-and-response/#detect-after-changes"
+    ]
+  },
+  {
+    "question": "How do PAIN ratings relate to CVSS and evaluation factors?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-19249797",
+        "id": "community:DC_kwDOOxfoic4BJbqF",
+        "author": "pete-gov",
+        "publishedAt": "2026-10-28T18:01:01Z",
+        "parentQuestion": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-18644557",
+        "historicalPreview": false
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/reference/vulnerability-evaluation-and-reporting/#estimate-potential-agency-impact",
+      "https://www.fedramp.gov/2026/reference/vulnerability-evaluation-and-reporting/#evaluation-factors"
+    ]
+  },
+  {
+    "question": "How should we handle false positives?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-19203980",
+        "id": "community:DC_kwDOOxfoic4BJQeM",
+        "author": "pete-gov",
+        "publishedAt": "2026-10-26T20:22:57Z",
+        "parentQuestion": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-19203755",
+        "historicalPreview": false
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/reference/vulnerability-evaluation-and-reporting/#evaluate-false-positives",
+      "https://www.fedramp.gov/2026/reference/vulnerability-evaluation-and-reporting/#vulnerability-details"
+    ]
+  },
+  {
+    "question": "What is the difference between mitigation, remediation, and acceptance?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/community/discussions/147#discussioncomment-18903585",
+        "id": "community:DC_kwDOOxfoic4BIHIh",
+        "author": "pete-gov",
+        "publishedAt": "2026-10-13T14:58:06Z",
+        "parentQuestion": "https://github.com/FedRAMP/community/discussions/147#discussioncomment-18882329",
+        "historicalPreview": false
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/definitions/",
+      "https://www.fedramp.gov/2026/reference/vulnerability-evaluation-and-reporting/#mark-accepted-vulnerabilities",
+      "https://www.fedramp.gov/2026/reference/vulnerability-evaluation-and-reporting/#accepted-vulnerability-info"
+    ]
+  },
+  {
+    "question": "When do the clocks start, and are days calendar days?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-19073144",
+        "id": "community:DC_kwDOOxfoic4BIwh4",
+        "author": "pete-gov",
+        "publishedAt": "2026-10-20T13:27:43Z",
+        "parentQuestion": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-19048589",
+        "historicalPreview": false
+      },
+      {
+        "url": "https://github.com/FedRAMP/2026/discussions/53#discussioncomment-17366321",
+        "id": "commentary:DC_kwDORpyFmc4BCP0x",
+        "author": "pete-gov",
+        "publishedAt": "2026-06-19T15:22:30Z",
+        "parentQuestion": "https://github.com/FedRAMP/2026/discussions/53#discussioncomment-17365800",
+        "historicalPreview": true
+      },
+      {
+        "url": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-18356896",
+        "id": "community:DC_kwDOOxfoic4BGBqg",
+        "author": "pete-gov",
+        "publishedAt": "2026-09-08T21:10:26Z",
+        "parentQuestion": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-18356714",
+        "historicalPreview": false
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/reference/vulnerability-evaluation-and-reporting/#evaluate-vulnerabilities-quickly",
+      "https://www.fedramp.gov/2026/reference/vulnerability-detection-and-response/#mitigation-and-remediation-expectations"
+    ]
+  },
+  {
+    "question": "What if a vendor fix or major upgrade is delayed?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/2026/discussions/46#discussioncomment-17330062",
+        "id": "commentary:DC_kwDORpyFmc4BCG-O",
+        "author": "pete-gov",
+        "publishedAt": "2026-06-16T22:25:48Z",
+        "parentQuestion": "https://github.com/FedRAMP/2026/discussions/46#discussioncomment-17329268",
+        "historicalPreview": true
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/reference/vulnerability-detection-and-response/#vulnerability-response",
+      "https://www.fedramp.gov/2026/reference/vulnerability-detection-and-response/#remediate-kevs"
+    ]
+  },
+  {
+    "question": "When does a vulnerability become a reportable incident?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/2026/discussions/153#discussioncomment-19079330",
+        "id": "commentary:DC_kwDORpyFmc4BIyCi",
+        "author": "pete-gov",
+        "publishedAt": "2026-10-20T18:42:47Z",
+        "parentQuestion": "https://github.com/FedRAMP/2026/discussions/153#discussioncomment-19077022",
+        "historicalPreview": false
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/reference/vulnerability-evaluation-and-reporting/#internet-reachable-incidents",
+      "https://www.fedramp.gov/2026/reference/vulnerability-evaluation-and-reporting/#non-internet-reachable-incidents"
+    ]
+  },
+  {
+    "question": "Do we have to move to a trust center before adopting VDR/VER?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/2026/discussions/156#discussioncomment-19132691",
+        "id": "commentary:DC_kwDORpyFmc4BI_ET",
+        "author": "pete-gov",
+        "publishedAt": "2026-10-22T21:05:35Z",
+        "parentQuestion": "https://github.com/FedRAMP/2026/discussions/156#discussioncomment-19132429",
+        "historicalPreview": false
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/reference/vulnerability-evaluation-and-reporting/#historical-activity",
+      "https://www.fedramp.gov/2026/reference/certification-data-sharing/"
+    ]
+  },
+  {
+    "question": "What do the adoption dates mean, and what evidence should we retain?",
+    "discussions": [
+      {
+        "url": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-18758517",
+        "id": "community:DC_kwDOOxfoic4BHjt1",
+        "author": "pete-gov",
+        "publishedAt": "2026-10-05T11:39:59Z",
+        "parentQuestion": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-18739655",
+        "historicalPreview": false
+      },
+      {
+        "url": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-18405212",
+        "id": "community:DC_kwDOOxfoic4BGNdc",
+        "author": "pete-gov",
+        "publishedAt": "2026-09-11T19:14:24Z",
+        "parentQuestion": "https://github.com/FedRAMP/community/discussions/146#discussioncomment-18404768",
+        "historicalPreview": false
+      }
+    ],
+    "officialReferences": [
+      "https://www.fedramp.gov/2026/providers/updating/deadlines/"
+    ]
+  }
+]

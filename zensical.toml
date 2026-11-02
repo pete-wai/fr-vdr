@@ -13,7 +13,8 @@ nav = [
   { "Overview" = "index.md" },
   { "Schemas and template" = "schemas.md" },
   { "Examples" = "examples.md" },
-  { "Validate" = "validate.md" }
+  { "Validate" = "validate.md" },
+  { "FAQ" = "faq.md" }
 ]
 
 [project.theme]
